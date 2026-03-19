@@ -21,7 +21,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="px-[122px] pt-[60px] pb-0 max-md:px-[38px] max-md:pt-[40px] mb-20 mt-20 max-md:mt-56">
+    <section className="px-[122px] pt-[60px] pb-0 max-md:px-[38px] max-md:pt-[40px] mb-20 mt-20">
       {/* Avatar */}
       <div className="animate-fade-up mb-5">
         <img
