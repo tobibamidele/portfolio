@@ -10,25 +10,25 @@ const projects = [
     name: 'Doth',
     description: 'A customizable OAuth 2.0 multi-provider library for dart servers.',
     githubUrl: 'https://github.com/tobibamidele/doth',
-    icon: dartIcon,
+    icon: '/icons/dart_icon.svg',
   },
   {
     name: 'Idan',
     description: "Fast, lightweight, authentication library built on Go's net/http ideal for side projects.",
     githubUrl: 'https://github.com/tobibamidele/idan',
-    icon: null,
+    icon: '/icons/go_icon.svg',
   },
   {
     name: 'mem_visualizer',
     description: 'A TUI that visualizes live memory usage across system processes with color-coded RSS stats and fuzzy search.',
     githubUrl: 'https://github.com/tobibamidele/mem_visualizer',
-    icon: rustIcon,
+    icon: '/icons/rust_icon.svg',
   },
   {
     name: 'Dartbuster',
     description: 'A fast web bruteforcing tool written in dart. Inspired by gobuster and feroxbuster.',
     githubUrl: 'https://github.com/tobibamidele/dartbuster',
-    icon: dartIcon,
+    icon: '/icons/dart_icon.svg',
   },
 ]
 

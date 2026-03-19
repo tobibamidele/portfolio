@@ -1,20 +1,49 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+
+const avatarUrl = "/images/avatar.png"
+
+const roles = ['student dev', 'cyb student', 'gamer', 'creative nerd']
 
 export default function Hero() {
+  const [roleIndex, setRoleIndex] = useState(0)
+  const [visible, setVisible] = useState(true)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // fade out, swap text, fade in
+      setVisible(false)
+      setTimeout(() => {
+        setRoleIndex(i => (i + 1) % roles.length)
+        setVisible(true)
+      }, 300)
+    }, 2400)
+    return () => clearInterval(interval)
+  }, [])
+
   return (
-    <section className="px-[122px] pt-[200px] pb-0 max-md:px-[38px] max-md:pt-[161px]">
-      {/* Avatar / profile dot */}
-      <div className="animate-fade-up mb-10 w-10 h-10 rounded-full bg-[#1a1a1a] border border-[#333] flex items-center justify-center">
-        <svg width="16" height="4" viewBox="0 0 16 4" fill="none">
-          <circle cx="2" cy="2" r="2" fill="#808080"/>
-          <circle cx="8" cy="2" r="2" fill="#808080"/>
-          <circle cx="14" cy="2" r="2" fill="#808080"/>
-        </svg>
+    <section className="px-[122px] pt-[60px] pb-0 max-md:px-[38px] max-md:pt-[40px] mb-20 mt-20 max-md:mt-56">
+      {/* Avatar */}
+      <div className="animate-fade-up mb-5">
+        <img
+          src={avatarUrl}
+          alt="Tobi"
+          className="w-[50px] h-[50px] rounded-full object-cover"
+        />
+      </div>
+
+      {/* Role pill */}
+      <div className="animate-fade-up animation-delay-100 mb-5">
+        <span
+          className="inline-block border border-[#808080] rounded-[16px] px-[14px] py-[10px] text-[12px] text-white font-normal transition-opacity duration-300"
+          style={{ opacity: visible ? 1 : 1 }}
+        >
+          {roles[roleIndex]}
+        </span>
       </div>
 
       {/* Headline */}
       <h1
-        className="animate-fade-up animation-delay-100 font-semibold text-white tracking-[-0.64px] leading-tight mb-0"
+        className="animate-fade-up animation-delay-200 font-semibold text-white tracking-[-0.64px] leading-tight mb-0"
         style={{ fontSize: 'clamp(36px, 5.5vw, 64px)', maxWidth: '977px' }}
       >
         <span className="block">Hi. I'm Tobi.</span>
@@ -23,16 +52,16 @@ export default function Hero() {
 
       {/* Subheading */}
       <p
-        className="animate-fade-up animation-delay-200 font-normal text-[#808080] mt-[24px] leading-relaxed"
+        className="animate-fade-up animation-delay-300 font-normal text-[#808080] mt-[24px] leading-relaxed"
         style={{ fontSize: 'clamp(16px, 1.8vw, 24px)', maxWidth: '977px' }}
       >
         I love logic and building highly scalable, efficient, and secure backend systems that can withstand high-throughput environments.
       </p>
 
-      {/* CTA Button */}
+      {/* CTA */}
       <a
         href="mailto:franklintobi09@gmail.com"
-        className="animate-fade-up animation-delay-300 inline-flex items-center mt-[40px] mb-[40px] bg-[#d9d9d9] text-black font-semibold rounded-[32px] px-8 py-[18px] text-[18px] transition-all duration-200 hover:bg-white hover:scale-[1.03] active:scale-[0.98]"
+        className="animate-fade-up animation-delay-400 inline-flex items-center mt-[40px] bg-[#d9d9d9] text-black font-semibold rounded-[32px] px-8 py-[18px] transition-all duration-200 hover:bg-white hover:scale-[1.03] active:scale-[0.98]"
         style={{ fontSize: 'clamp(16px, 1.4vw, 24px)' }}
       >
         Get in touch
