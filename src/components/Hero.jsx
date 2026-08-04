@@ -9,15 +9,20 @@ export default function Hero() {
   const [visible, setVisible] = useState(true)
 
   useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+    let timeout
     const interval = setInterval(() => {
       // fade out, swap text, fade in
       setVisible(false)
-      setTimeout(() => {
+      timeout = setTimeout(() => {
         setRoleIndex(i => (i + 1) % roles.length)
         setVisible(true)
       }, 300)
     }, 2400)
-    return () => clearInterval(interval)
+    return () => {
+      clearInterval(interval)
+      clearTimeout(timeout)
+    }
   }, [])
 
   return (
@@ -27,7 +32,7 @@ export default function Hero() {
         <img
           src={avatarUrl}
           alt="Tobi"
-          className="w-[50px] h-[50px] rounded-full object-cover"
+          className="w-[50px] h-[50px] rounded-full object-cover ring-1 ring-white/10"
         />
       </div>
 
@@ -35,7 +40,7 @@ export default function Hero() {
       <div className="animate-fade-up animation-delay-100 mb-5">
         <span
           className="inline-block border border-[#808080] rounded-[16px] px-[14px] py-[10px] text-[12px] text-white font-normal transition-opacity duration-300"
-          style={{ opacity: visible ? 1 : 1 }}
+          style={{ opacity: visible ? 1 : 0 }}
         >
           {roles[roleIndex]}
         </span>
@@ -61,7 +66,7 @@ export default function Hero() {
       {/* CTA */}
       <a
         href="mailto:franklintobi09@gmail.com"
-        className="animate-fade-up animation-delay-400 inline-flex items-center mt-[40px] bg-[#d9d9d9] text-black font-semibold rounded-[32px] px-8 py-[18px] transition-all duration-200 hover:bg-white hover:scale-[1.03] active:scale-[0.98]"
+        className="animate-fade-up animation-delay-400 inline-flex items-center mt-[40px] bg-[#d9d9d9] text-black font-semibold rounded-[32px] px-8 py-[18px] transition-[background-color,transform] duration-200 hover:bg-white hover:scale-[1.03] active:scale-[0.96]"
         style={{ fontSize: 'clamp(16px, 1.4vw, 24px)' }}
       >
         Get in touch

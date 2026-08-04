@@ -13,7 +13,7 @@ const socials = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="px-[140px] max-md:px-6 py-[160px] border-b border-[#1f1f1f] text-center">
+    <section id="contact" className="px-[140px] max-md:px-6 py-[160px] text-center">
       {/* Big heading */}
       <h2
         className="font-medium text-white leading-tight mb-6 mx-auto"
@@ -29,7 +29,7 @@ export default function Contact() {
       {/* CTA Button */}
       <a
         href="mailto:franklintobi09@gmail.com"
-        className="inline-flex items-center justify-center bg-[#d9d9d9] text-black font-semibold text-[10px] max-md:text-xs tracking-widest w-[134px] h-[50px] mb-[80px] transition-all duration-200 hover:bg-white hover:scale-[1.03]"
+        className="inline-flex items-center justify-center bg-[#d9d9d9] text-black font-semibold text-base rounded-[32px] px-8 py-[18px] mb-[80px] transition-[background-color,transform] duration-200 hover:bg-white hover:scale-[1.03] active:scale-[0.96]"
       >
         SEND AN EMAIL
       </a>

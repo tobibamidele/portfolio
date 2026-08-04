@@ -11,7 +11,7 @@ function GitHubIcon() {
 
 export default function ProjectCard({ name, description, githubUrl, icon }) {
   return (
-    <div className="relative bg-black border border-[#808080] rounded-[16px] p-[30px] flex flex-col justify-between min-h-[182px] group transition-all duration-200 hover:border-[#aaa] hover:bg-[#0a0a0a]">
+    <div className="relative bg-black border border-[#808080] rounded-[16px] p-[30px] flex flex-col justify-between min-h-[182px] group transition-[background-color,border-color,transform] duration-200 hover:border-[#aaa] hover:bg-[#0a0a0a]">
       {/* Top row: name + icon */}
       <div className="flex items-start justify-between gap-3">
         <h3 className="font-medium text-white text-[24px] leading-tight">{name}</h3>
@@ -33,7 +33,7 @@ export default function ProjectCard({ name, description, githubUrl, icon }) {
           href={githubUrl || '#'}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-[8px] bg-[#d9d9d9] text-black font-normal text-[14px] rounded-[10px] px-[12px] py-[6px] transition-all duration-150 hover:bg-white"
+          className="inline-flex items-center gap-[8px] bg-[#d9d9d9] text-black font-normal text-[14px] rounded-[10px] px-[12px] py-[6px] transition-colors duration-150 hover:bg-white"
         >
           <GitHubIcon />
           <span>GitHub</span>

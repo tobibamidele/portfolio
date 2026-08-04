@@ -1,10 +1,6 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
 
-// Figma asset URLs (valid 7 days from design pull)
-const dartIcon = 'https://www.figma.com/api/mcp/asset/c6076837-f422-408d-869d-26faee2fcb50'
-const rustIcon = 'https://www.figma.com/api/mcp/asset/9d97250a-5f6d-46c2-9847-eb3ea05b8744'
-
 const projects = [
   {
     name: 'Polo',
