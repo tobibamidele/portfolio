@@ -7,6 +7,17 @@ const rustIcon = 'https://www.figma.com/api/mcp/asset/9d97250a-5f6d-46c2-9847-eb
 
 const projects = [
   {
+    name: 'Polo',
+    description: 'A stack-based bytecode-interpreted programming language',
+    githubUrl: 'https://github.com/tobibamidele/polo-lang',
+    icon: '/icons/go_icon.svg',
+  },
+  {
+    name: 'FastJSON',
+    description: 'An extremely fast, rust-based, JSON parsing library for Dart written in Rust and powered by SIMD',
+    githubUrl: 'https://github.com/tobibamidele/fastjson',
+  },
+  {
     name: 'Doth',
     description: 'A customizable OAuth 2.0 multi-provider library for dart servers.',
     githubUrl: 'https://github.com/tobibamidele/doth',
