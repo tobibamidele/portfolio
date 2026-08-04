@@ -9,6 +9,18 @@ const projects = [
     icon: '/icons/go_icon.svg',
   },
   {
+    name: 'Termflix',
+    description: 'A high-performance terminal video renderer using Unicode half-block characters',
+    githubUrl: 'https://github.com/tobibamidele/termflix',
+    icon: '/icons/rust_icon.svg',
+  },
+  {
+    name: 'VaultPAPI',
+    description: 'A self-hostable zero-knowledge secure password manager complete with the Chrome extension',
+    githubUrl: 'https://github.com/tobibamidele/vaultpapi',
+    icon: '/icons/go_icon.svg',
+  },
+  {
     name: 'FastJSON',
     description: 'An extremely fast, rust-based, JSON parsing library for Dart written in Rust and powered by SIMD',
     githubUrl: 'https://github.com/tobibamidele/fastjson',
