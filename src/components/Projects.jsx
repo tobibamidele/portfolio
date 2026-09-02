@@ -3,6 +3,12 @@ import ProjectCard from './ProjectCard'
 
 const projects = [
   {
+    name: 'Toris',
+    description: 'Production-grade PostgreSQL backup, synchronization, failover, and restoration orchestration.',
+    githubUrl: 'https://github.com/tobibamidele/toris',
+    icon: '/icons/go_icon.svg',
+  },
+  {
     name: 'Polo',
     description: 'A stack-based bytecode-interpreted programming language',
     githubUrl: 'https://github.com/tobibamidele/polo-lang',
@@ -19,6 +25,24 @@ const projects = [
     description: 'A self-hostable zero-knowledge secure password manager complete with the Chrome extension',
     githubUrl: 'https://github.com/tobibamidele/vaultpapi',
     icon: '/icons/go_icon.svg',
+  },
+  {
+    name: 'CloudPath',
+    description: 'AWS Cloud Attack-Path Analyzer. Discovers AWS infra, identities, and permissions; builds a security graph and finds realistic attack paths.',
+    githubUrl: 'https://github.com/tobibamidele/cloudpath',
+    icon: '/icons/go_icon.svg',
+  },
+  {
+    name: 'Gowa',
+    description: 'Go client for interacting with the official WhatsApp Business API',
+    githubUrl: 'https://github.com/tobibamidele/gowa',
+    icon: '/icons/go_icon.svg',
+  },
+  {
+    name: 'OpenCode Pipe',
+    description: 'Coordinate independent OpenCode sessions through named communication channels ("pipes") without merging context windows, copying files, or starting a daemon.',
+    githubUrl: 'https://github.com/tobibamidele/opencode-pipe',
+    icon: '/icons/ts_icon.svg',
   },
   {
     name: 'FastJSON',
