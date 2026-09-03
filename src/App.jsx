@@ -6,6 +6,7 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import SpotifyPill from './components/SpotifyPill'
 
 function Divider() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
       <Divider />
       <Contact />
       <Footer />
+      <SpotifyPill />
     </div>
   )
 }
