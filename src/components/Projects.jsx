@@ -16,7 +16,7 @@ const projects = [
   },
   {
     name: "BlockLens",
-    description: 'that connects to an Ethereum node and builds its own searchable, reorg-safe blockchain database in PostgreSQL, exposed over a REST API (with WebSocket support)',
+    description: 'A Go service that connects to an Ethereum node and builds its own searchable, reorg-safe blockchain database in PostgreSQL, exposed over a REST API (with WebSocket support)',
     githubUrl: 'https://github.com/tobibamidele/blocklens',
     icon: '/icons/go_icon.svg',
   },
