@@ -15,6 +15,12 @@ const projects = [
     icon: '/icons/go_icon.svg',
   },
   {
+    name: "BlockLens",
+    description: 'that connects to an Ethereum node and builds its own searchable, reorg-safe blockchain database in PostgreSQL, exposed over a REST API (with WebSocket support)',
+    githubUrl: 'https://github.com/tobibamidele/blocklens',
+    icon: '/icons/go_icon.svg',
+  },
+  {
     name: 'Termflix',
     description: 'A high-performance terminal video renderer using Unicode half-block characters',
     githubUrl: 'https://github.com/tobibamidele/termflix',
