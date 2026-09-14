@@ -21,6 +21,12 @@ const projects = [
     icon: '/icons/go_icon.svg',
   },
   {
+    name: "Goforge",
+    description: "An interactive CLI that scaffolds a new Go HTTP project: pick a framework, database, ORM, Redis, Docker, and an auth setup, and it generates a real, working project on disk.",
+    githubUrl: 'https://github.com/tobibamidele/goforge',
+    icon: '/icons/go_icon.svg',
+  },
+  {
     name: 'Termflix',
     description: 'A high-performance terminal video renderer using Unicode half-block characters',
     githubUrl: 'https://github.com/tobibamidele/termflix',
